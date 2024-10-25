@@ -19,7 +19,7 @@ app.get('/stocks/sort/pricing', (request, response) => {
 
   if (pricing == 'low-to-high') {
     sortedStocks.sort((a, b) => a.price - b.price);
-  } else if (pricing == 'high to low') {
+  } else if (pricing == 'high-to-low') {
     sortedStocks.sort((a, b) => b.price - a.price);
   }
 
